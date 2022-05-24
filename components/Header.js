@@ -68,19 +68,6 @@ function Header() {
         </div>
         <div className="flex items-center justify-end space-x-4">
           <HomeIcon onClick={() => router.push('/')} className="navBtn" />
-          <div>
-            <Button
-              id="demo-positioned-button"
-              aria-controls={openMenu ? 'demo-positioned-menu' : undefined}
-              aria-haspopup="true"
-              aria-expanded={openMenu ? 'true' : undefined}
-              onClick={handleClick}
-              className="h-6 cursor-pointer md:hidden"
-            >
-              <MenuIcon />
-            </Button>
-          </div>
-
           {session ? (
             <>
               <div className="navBtn relative">
