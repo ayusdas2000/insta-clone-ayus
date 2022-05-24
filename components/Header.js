@@ -79,30 +79,6 @@ function Header() {
             >
               <MenuIcon />
             </Button>
-            <Menu
-              id="demo-positioned-menu"
-              aria-labelledby="demo-positioned-button"
-              anchorEl={anchorEl}
-              open={openMenu}
-              onClose={handleClose}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-            >
-              {session ? (
-                <MenuItem onClick={() => setOpen(true)}>
-                  {' '}
-                  Upload Photo
-                </MenuItem>
-              ) : (
-                <button onClick={signIn}>Sign In</button>
-              )}
-            </Menu>
           </div>
 
           {session ? (
